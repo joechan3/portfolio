@@ -4,51 +4,87 @@
         <meta charset="utf-8">
         <meta name="description" content="Joseph Chan - Freelance Front End Developer">
         <title>Joseph Chan - Freelance Front End Developer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     </head>
     <body>
-        <ul>
-            <li>Work</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-        
-        <h1>Joseph Chan</h1>
-        <p>Freelance front end developer</p>
-        <p>I build robust solutions for your web projects.</p>
-                
-        <h2>Projects</h2> <!--Hide heading-->
-        
-        <h3>Audrey Hepburn</h3>
-        <p>To the most beautiful woman of all time.</p>
-        
-        <h3>Future Project</h3>
-        <p>Under construction.</p>
-        
-        <h3>Future Project</h3>
-        <p>Under construction.</p>
-        
-        <h3>Future Project</h3>
-        <p>Under construction.</p>
-        
-        <h3>Future Project</h3>
-        <p>Under construction.</p>
-        
-        <h3>Future Project</h3>
-        <p>Under construction.</p>
-        
-        <h2>About Me</h2><!--Hide heading-->
-        <p>Hi, my name is Joseph Chan and I'm a freelance front end developer based in Edmonton.</p>
+        <header role="banner">
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#Work">Projects</a></li>
+                    <li><a href="#AboutMe">About</a></li>
+                    <li><a href="#ContactMe">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Joseph Chan</h1>
+            <p>Freelance front end developer</p>
+            <p>I build robust solutions for your web projects.</p>
+        </header>
+        <main role="main">
+            <article role="article">
+                <section>
+                    <h2 id="Work">Projects</h2> <!--Hide heading-->
 
-        <p>I turn your ideas to life on the browser. My skills include HTML5, CSS3, and Bootstrap 3. Continuous improvement is my motto, so I'm currently adding JavaScript and jQuery to my skillset.</p>
+                    <section>
+                        <h3>Audrey Hepburn</h3>
+                        <a href="https://joechan3.github.io/TributePage_AudreyHepburn/" target="_blank" title="Check out my Audrey Hepburn Tribute page.">Audrey Hepburn</a>
+                        <span></span>
+                        <a href="https://github.com/joechan3/TributePage_AudreyHepburn" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
+                        <p>To the most beautiful woman of all time.</p>
+                        <span class="fa fa-html5" title="Built using HTML5"></span>
+                        <span class="fa fa-css3" title="Built using CSS3"></span>
+                    </section>
 
-        <p>My interests include responsive web design, web design systems (specifically Atomic Design), and user experience.</p>
+                    <section>
+                        <h3>Future Project</h3>
+                        <p>Under construction.</p>
+                    </section>
 
-        <p>I'm fascinated by how web design is adapting to growing device diversity, i.e. mobile devices, and how web technologies like CSS3 and Bootstrap are responding to this change.</p>
+                    <section>
+                        <h3>Future Project</h3>
+                        <p>Under construction.</p>
+                    </section>
 
-        <p>I'm currently offering pro bono work to grow my portfolio.</p>
+                    <section>
+                        <h3>Future Project</h3>
+                        <p>Under construction.</p>
+                    </section>
 
-        <p><a href="mailto:joechan3@gmail.com?Subject=Let's%20talk" target="_blank" title="Send me an email">Contact me</a> today and let's start a conversation on how we can build your web ideas.</p>
-        
-        <p>JOSEPH CHAN &copy; 2016</p>
+                    <section>
+                        <h3>Future Project</h3>
+                        <p>Under construction.</p>
+                    </section>
+
+                    <section>
+                        <h3>Future Project</h3>
+                        <p>Under construction.</p>
+                    </section>
+                </section>
+                <section>
+                    <h2 id="AboutMe">About Me</h2><!--Hide heading-->
+                    <img src="images/Placeholder-Person.jpg" width="150" height="auto" alt="My Portrait">
+                    <p>Hi, my name is Joseph Chan and I'm a freelance front end developer based in Edmonton.</p>
+
+                    <p>I build websites and web applications to turn your ideas to life on the browser. My skills include HTML5, CSS3, and Bootstrap 3. Continuous improvement is my motto, so I'm currently adding JavaScript and jQuery to my skillset.</p>
+
+                    <p>My interests include responsive web design, web design systems (specifically Atomic Design), and user experience.</p>
+
+                    <p>I'm fascinated by how web design is adapting to growing device diversity, i.e. mobile devices, and how web technologies like CSS3 and Bootstrap are responding to this change.</p>
+
+                    <p>I'm currently offering pro bono work to grow my portfolio.</p>
+
+                    <p><a href="mailto:joechan3@gmail.com?Subject=Let's%20talk" title="Send me an email.">Contact me</a> today and let's start a conversation on how we can build your web ideas.</p>
+                </section>
+                <section>
+                    <h2 id="ContactMe">Contact</h2><!--Hide heading-->
+                    <!--Link to GitHub profile-->
+                    <a href="https://github.com/joechan3/" title="Check out my GitHub profile." target="_blank"><span class="fa fa-github"></span></a>
+                    <!--Email link-->
+                    <a href="mailto:joechan3@gmail.com?Subject=Let's%20talk" title="Send me an email."><span class="fa fa-envelope"></span></a>
+                </section>
+            </article>
+        </main>
+        <footer role="contentinfo">
+            <p>JOSEPH CHAN &copy; 2016</p>
+        </footer>
     </body>
 </html>
