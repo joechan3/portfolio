@@ -1,0 +1,13 @@
+/*Navigation Bar*/
+.navbar-header{
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle{
+    border: none;
+}
+
+nav a {
+    background-color: #fff;
+    text-align: center;
+}
