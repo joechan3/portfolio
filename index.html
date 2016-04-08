@@ -18,12 +18,28 @@
     </head>
     <body>
         <header role="banner">
-            <nav role="navigation">
-                <ul>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#AboutMe">About</a></li>
-                    <li><a href="#ContactMe">Contact</a></li>
-                </ul>
+            <nav role="navigation" class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!--Using aria-expanded to indicate the state of a collapsible element-->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                            <!--Text for screen readers only-->
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div><!--.navbar-header-->
+                    <!-- Collect the nav links for toggling -->
+                    <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav">
+                        <!--Make the Project item active and tell screen readers that it is currently selected-->
+                        <li class="active"><a href="#Projects">Projects<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#AboutMe">About</a></li>
+                        <li><a href="#ContactMe">Contact</a></li>
+                    </ul>
+                    </div><!--.collapse .navbar-collapse-->
+                </div><!--.container-fluid-->
             </nav>
             <h1>Joseph Chan</h1>
             <p>Freelance front end developer</p>
