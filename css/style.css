@@ -1,6 +1,7 @@
 /*---Color Palette---*/
 /* White: #ffffff
 /* Black: #000000
+/* Grey: #CCCAC8
 /* Yellow: #F5BB3D
 /* Green: #74C346
 /* Magenta: #DD005F
@@ -38,11 +39,44 @@ h1, header p{
 }
 
 /*---Navigation Bar---*/
-
-/*Center the "Menu" navigation text*/
-a.nav-toggle, a.nav-toggle.active{
+a.nav-toggle, a.nav-toggle.active, nav ul li a{
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+    /*Center the "Menu" navigation text*/
     display: block;
-    max-width: 25%;
+    max-width: 50%;
     margin: 0 auto;
     text-align: center;
 }
+
+a.nav-toggle{
+    border-bottom: #000 1px solid;
+}
+
+a.nav-toggle.active{
+    border-top: #000 1px solid;
+    border-bottom: #000 1px solid;
+}
+
+nav ul li a:visited{
+    color: #CCCAC8
+}
+
+a.nav-toggle:focus,
+a.nav-toggle:hover,
+a.nav-toggle:active,
+a.nav-toggle.active:focus,
+a.nav-toggle.active:hover,
+a.nav-toggle.active:active,
+nav ul li a:focus, 
+nav ul li a:hover, 
+nav ul li a:active{
+    color: #000;
+    text-decoration: underline;
+    outline: none;
+}
+
+/*---End Navigation Bar---*/
