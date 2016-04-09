@@ -1,13 +1,9 @@
 /*Navigation Bar*/
-.navbar-header{
-    background-color: #fff;
-}
 
-.navbar-default .navbar-toggle{
-    border: none;
-}
-
-nav a {
-    background-color: #fff;
+/*Center the "Menu" navigation text*/
+a.nav-toggle, a.nav-toggle.active{
+    display: block;
+    max-width: 25%;
+    margin: 0 auto;
     text-align: center;
 }
