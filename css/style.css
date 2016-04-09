@@ -1,4 +1,43 @@
-/*Navigation Bar*/
+/*---Color Palette---*/
+/* White: #ffffff
+/* Black: #000000
+/* Yellow: #F5BB3D
+/* Green: #74C346
+/* Magenta: #DD005F
+/* Purple: #7D3493
+/* Blue: #3894D7
+*/
+
+/*---Fonts---*/
+/*font-family: 'Raleway', sans-serif;
+/*font-family: 'Arimo', sans-serif;
+/*font-family: 'Arvo', serif; 
+*/
+
+body{
+    font-family: 'Arvo', serif;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.25em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 2px;
+    
+}
+
+header p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+h1, header p{
+    text-align: center;
+}
+
+/*---Navigation Bar---*/
 
 /*Center the "Menu" navigation text*/
 a.nav-toggle, a.nav-toggle.active{
