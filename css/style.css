@@ -44,12 +44,16 @@ a.nav-toggle, a.nav-toggle.active, nav ul li a{
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 5px 0px;
+    padding-top: 7px;
     /*Center the "Menu" navigation text*/
     display: block;
     max-width: 50%;
     margin: 0 auto;
     text-align: center;
+}
+
+a.nav-toggle, a.nav-toggle.active, nav ul li:last-of-type a{
+    padding-bottom: 7px;
 }
 
 a.nav-toggle{
@@ -80,3 +84,34 @@ nav ul li a:active{
 }
 
 /*---End Navigation Bar---*/
+
+/*---Projects---*/
+section[class="col-md-6"]:nth-child(2)
+{
+    background-color: #F5BB3D;
+}
+
+section[class="col-md-6"]:nth-child(3)
+{
+    background-color: #74C346;
+}
+
+section[class="col-md-6"]:nth-child(4)
+{
+    background-color: #DD005F;
+}
+
+section[class="col-md-6"]:nth-child(5)
+{
+    background-color: #7D3493;
+}
+
+section[class="col-md-6"]:nth-child(6)
+{
+    background-color: #3894D7;
+}
+
+section[class="col-md-6"]:nth-child(7)
+{
+    background-color: #F5BB3D;
+}
