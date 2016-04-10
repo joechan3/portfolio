@@ -1,4 +1,4 @@
-/*------------------Color Palette------------------*/
+/*----------------------------------Color Palette---------------------------------------*/
 /* White: #ffffff
 /* Black: #000000
 /* Grey: #CCCAC8
@@ -9,7 +9,7 @@
 /* Blue: #3894D7
 */
 
-/*---------------------Fonts-----------------------*/
+/*----------------------------------Fonts-----------------------------------------------*/
 /*font-family: 'Raleway', sans-serif;
 /*font-family: 'Arimo', sans-serif;
 /*font-family: 'Arvo', serif; 
@@ -37,7 +37,7 @@ h1, h3, header p{
     text-align: center;
 }
 
-/*-----------------Navigation Bar------------------*/
+/*----------------------------------Navigation Bar--------------------------------------*/
 a.nav-toggle, a.nav-toggle.active, nav ul li a{
     color: #000;
     font-weight: bold;
@@ -64,10 +64,6 @@ a.nav-toggle.active{
     border-bottom: #000 1px solid;
 }
 
-nav ul li a:visited{
-    color: #CCCAC8
-}
-
 a.nav-toggle:focus,
 a.nav-toggle:hover,
 a.nav-toggle:active,
@@ -82,28 +78,34 @@ nav ul li a:active{
     outline: none;
 }
 
-/*---------------End Navigation Bar----------------*/
+/*----------------------------------End Navigation Bar----------------------------------*/
 
-/*-------------------Projects----------------------*/
+/*----------------------------------Projects--------------------------------------------*/
 
-h3{
-    font-size: 1.75em;
-    /*Responsively vertically and horizontally center the Project Titles*/
-        /*Remove Bootstrap margins*/    
-        margin-top: 0;
-        margin-bottom: 0;
-        position: absolute;
-        /*For absolutely positioned elements, "top" specifies the distance between the top margin edge of the element and the top edge of its containing block.*/
-        top: 50%;
-        /*For absolutely positioned elements, "left" specifies the distance between the left margin edge of the element and the left edge of its containing block.*/
-        left: 50%;
-        /*Transform percentages are relative to the <h3> element height and width*/
-        -ms-transform: translateX(-50%)translateY(-50%);
-        -o-transform: translateX(-50%)translateY(-50%);
-        transform: translateX(-50%)translateY(-50%);
+article .row:first-child div[class*="col"] {
+    margin-top:15px;
+    margin-bottom:15px;
 }
 
-/*Responsive aspect ratio*/
+/*---Cover Page Title---*/
+h3{
+    font-size: 1.75em;
+    /*--Responsively vertically and horizontally center the Project Titles--*/
+    /*Remove Bootstrap margins*/    
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    /*For absolutely positioned elements, "top" specifies the distance between the top margin edge of the element and the top edge of its containing block.*/
+    top: 50%;
+    /*For absolutely positioned elements, "left" specifies the distance between the left margin edge of the element and the left edge of its containing block.*/
+    left: 50%;
+    /*Transform percentages are relative to the <h3> element's height and width*/
+    -ms-transform: translateX(-50%)translateY(-50%);
+    -o-transform: translateX(-50%)translateY(-50%);
+    transform: translateX(-50%)translateY(-50%);
+}
+
+/*---Responsive aspect ratio---*/
 .stretchy-wrapper{
     width:100%;
     padding-bottom:100%; /*1:1 aspect ratio*/
@@ -118,7 +120,7 @@ h3{
     left:0;
     right:0;
 }
-/*End Responsive aspect ratio*/
+/*---End Responsive aspect ratio---*/
 
 /*Background image styling for all projects*/
 .stretchy-wrapper>section{
@@ -131,98 +133,101 @@ h3{
     background-position: center center;
 }
 
-/*Initially hide project details*/
-.stretchy-wrapper>section a,
-.stretchy-wrapper>section p,
-.stretchy-wrapper>section span
-{
+/*---Project Details styles---*/
+
+/*Hide project details by default*/
+.projectDetails{
     display:none;
 }
 
-/*---Project 1---*/
-
-/*Cover page*/
-.row div[class*="col"]:nth-child(2) section
-{
-    background-color: #F5BB3D;
-}
-
-/*Project details background image*/
-.row div[class*="col"]:nth-child(2) section:hover,
-.row div[class*="col"]:nth-child(2) section:active
-{
-    background-image:url(../images/Audrey.png);
-}
-
-/*Link to project and short description*/
-.row div[class*="col"]:nth-child(2) section:hover a,
-.row div[class*="col"]:nth-child(2) section:active a,
-.row div[class*="col"]:nth-child(2) section:hover p,
-.row div[class*="col"]:nth-child(2) section:active p
-{
+/*All project details appear when hovering or active over project*/
+.row div[class*="col"] section:hover .projectDetails,
+.row div[class*="col"] section:active .projectDetails{
     display:block;
 }
 
-/*Link to project*/
-.row div[class*="col"]:nth-child(2) section:hover a,
-.row div[class*="col"]:nth-child(2) section:active a
-{
+/*Project link, project repo link*/
+.stretchy-wrapper>section a,
+.stretchy-wrapper>section a span{
+    color: black;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+/*Project link, project repo link*/
+.stretchy-wrapper>section a:hover,
+.stretchy-wrapper>section a:active,
+.stretchy-wrapper>section a span:hover,
+.stretchy-wrapper>section a span:active{
+    text-decoration: underline;
+}
+
+/*Project link*/
+section:hover .projectDetails a:nth-child(1),
+section:active .projectDetails a:nth-child(1){
     float:left;
 }
 
-/*Link to repo*/
-.row div[class*="col"]:nth-child(2) section:hover a,
-.row div[class*="col"]:nth-child(2) section:active a
-{
+/*Project repo link*/
+section:hover .projectDetails a:nth-child(2),
+section:active .projectDetails a:nth-child(2){
     float:right;
 }
 
 /*Short description*/
-.row div[class*="col"]:nth-child(2) section:hover p,
-.row div[class*="col"]:nth-child(2) section:active p
-{
+section:hover .projectDetails p,
+section:active .projectDetails p{
     clear:both;
 }
 
 /*Technologies used*/
-.row div[class*="col"]:nth-child(2) section:hover span,
-.row div[class*="col"]:nth-child(2) section:active span{
-    display: inline-block;
+.projectDetails span[class*="fa"]{
+    padding-bottom:5px;
     float: right;
     margin-left:5px;
 }
 
 /*Container for project details*/
 .projectDetails{
-    background-color: rgba(204,202,200,0.96);
+    background-color: rgba(204,202,200,0.9);
     position:absolute;
     bottom:0;
     width:100%;
-    padding: 5px 15px;
+    padding: 0px 5px;
 }
 
 /*Hide cover page when hover/active */
-.row div[class*="col"]:nth-child(2) section:hover h3,
-.row div[class*="col"]:nth-child(2) section:active h3{
+.row div[class*="col"] section:hover h3,
+.row div[class*="col"] section:active h3{
     display:none;
 }
 
-/*Project 2*/
-.row div[class*="col"]:nth-child(3) section
-{
+/*-Project 1-*/
+
+/*Cover page*/
+.row div[class*="col"]:nth-child(2) section{
+    background-color: #F5BB3D;
+}
+
+/*Project details background image*/
+.row div[class*="col"]:nth-child(2) section:hover,
+.row div[class*="col"]:nth-child(2) section:active{
+    background-image:url(../images/Audrey.png);
+}
+
+/*-Project 2-*/
+.row div[class*="col"]:nth-child(3) section{
     background-color: #74C346;
 }
 
 .row div[class*="col"]:nth-child(3) section:hover,
-.row div[class*="col"]:nth-child(3) section:active
-{
+.row div[class*="col"]:nth-child(3) section:active{
     background-image:url(../images/Comingsoon.png);
 }
 
 
-/*Project 3*/
-.row div[class*="col"]:nth-child(4) section
-{
+/*-Project 3-*/
+.row div[class*="col"]:nth-child(4) section{
     background-color: #DD005F;
 }
 
@@ -231,9 +236,8 @@ h3{
     background-image:url(../images/Comingsoon.png);
 }
 
-/*Project 4*/
-.row div[class*="col"]:nth-child(5) section
-{
+/*-Project 4-*/
+.row div[class*="col"]:nth-child(5) section{
     background-color: #7D3493;
 }
 
@@ -242,9 +246,8 @@ h3{
     background-image:url(../images/Comingsoon.png);
 }
 
-/*Project 5*/
-.row div[class*="col"]:nth-child(6) section
-{
+/*-Project 5-*/
+.row div[class*="col"]:nth-child(6) section{
     background-color: #3894D7;
 }
 
@@ -253,9 +256,8 @@ h3{
     background-image:url(../images/Comingsoon.png);
 }
 
-/*Project 6*/
-.row div[class*="col"]:nth-child(7) section
-{
+/*-Project 6-*/
+.row div[class*="col"]:nth-child(7) section{
     background-color: #F5BB3D;
 }
 
@@ -264,5 +266,4 @@ h3{
     background-image:url(../images/Comingsoon.png);
 }
 
-
-
+/*----------------------------------End Projects----------------------------------------*/
