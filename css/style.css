@@ -131,15 +131,80 @@ h3{
     background-position: center center;
 }
 
-/*Project 1*/
+/*Initially hide project details*/
+.stretchy-wrapper>section a,
+.stretchy-wrapper>section p,
+.stretchy-wrapper>section span
+{
+    display:none;
+}
+
+/*---Project 1---*/
+
+/*Cover page*/
 .row div[class*="col"]:nth-child(2) section
 {
     background-color: #F5BB3D;
 }
 
+/*Project details background image*/
 .row div[class*="col"]:nth-child(2) section:hover,
-.row div[class*="col"]:nth-child(2) section:active{
+.row div[class*="col"]:nth-child(2) section:active
+{
     background-image:url(../images/Audrey.png);
+}
+
+/*Link to project and short description*/
+.row div[class*="col"]:nth-child(2) section:hover a,
+.row div[class*="col"]:nth-child(2) section:active a,
+.row div[class*="col"]:nth-child(2) section:hover p,
+.row div[class*="col"]:nth-child(2) section:active p
+{
+    display:block;
+}
+
+/*Link to project*/
+.row div[class*="col"]:nth-child(2) section:hover a,
+.row div[class*="col"]:nth-child(2) section:active a
+{
+    float:left;
+}
+
+/*Link to repo*/
+.row div[class*="col"]:nth-child(2) section:hover a,
+.row div[class*="col"]:nth-child(2) section:active a
+{
+    float:right;
+}
+
+/*Short description*/
+.row div[class*="col"]:nth-child(2) section:hover p,
+.row div[class*="col"]:nth-child(2) section:active p
+{
+    clear:both;
+}
+
+/*Technologies used*/
+.row div[class*="col"]:nth-child(2) section:hover span,
+.row div[class*="col"]:nth-child(2) section:active span{
+    display: inline-block;
+    float: right;
+    margin-left:5px;
+}
+
+/*Container for project details*/
+.projectDetails{
+    background-color: rgba(204,202,200,0.96);
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding: 5px 15px;
+}
+
+/*Hide cover page when hover/active */
+.row div[class*="col"]:nth-child(2) section:hover h3,
+.row div[class*="col"]:nth-child(2) section:active h3{
+    display:none;
 }
 
 /*Project 2*/
@@ -149,9 +214,11 @@ h3{
 }
 
 .row div[class*="col"]:nth-child(3) section:hover,
-.row div[class*="col"]:nth-child(3) section:active{
+.row div[class*="col"]:nth-child(3) section:active
+{
     background-image:url(../images/Comingsoon.png);
 }
+
 
 /*Project 3*/
 .row div[class*="col"]:nth-child(4) section
@@ -197,10 +264,5 @@ h3{
     background-image:url(../images/Comingsoon.png);
 }
 
-.stretchy-wrapper>section a,
-.stretchy-wrapper>section p,
-.stretchy-wrapper>section span
-{
-    display:none;
-}
+
 
