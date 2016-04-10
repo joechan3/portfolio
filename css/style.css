@@ -1,4 +1,4 @@
-/*---Color Palette---*/
+/*------------------Color Palette------------------*/
 /* White: #ffffff
 /* Black: #000000
 /* Grey: #CCCAC8
@@ -9,7 +9,7 @@
 /* Blue: #3894D7
 */
 
-/*---Fonts---*/
+/*---------------------Fonts-----------------------*/
 /*font-family: 'Raleway', sans-serif;
 /*font-family: 'Arimo', sans-serif;
 /*font-family: 'Arvo', serif; 
@@ -24,8 +24,7 @@ h1{
     font-size: 2.25em;
     text-transform: uppercase;
     letter-spacing: 5px;
-    word-spacing: 2px;
-    
+    word-spacing: 2px; 
 }
 
 header p{
@@ -34,11 +33,11 @@ header p{
     letter-spacing: 2px;
 }
 
-h1, header p{
+h1, h3, header p{
     text-align: center;
 }
 
-/*---Navigation Bar---*/
+/*-----------------Navigation Bar------------------*/
 a.nav-toggle, a.nav-toggle.active, nav ul li a{
     color: #000;
     font-weight: bold;
@@ -83,35 +82,125 @@ nav ul li a:active{
     outline: none;
 }
 
-/*---End Navigation Bar---*/
+/*---------------End Navigation Bar----------------*/
 
-/*---Projects---*/
-section[class="col-md-6"]:nth-child(2)
+/*-------------------Projects----------------------*/
+
+h3{
+    font-size: 1.75em;
+    /*Responsively vertically and horizontally center the Project Titles*/
+        /*Remove Bootstrap margins*/    
+        margin-top: 0;
+        margin-bottom: 0;
+        position: absolute;
+        /*For absolutely positioned elements, "top" specifies the distance between the top margin edge of the element and the top edge of its containing block.*/
+        top: 50%;
+        /*For absolutely positioned elements, "left" specifies the distance between the left margin edge of the element and the left edge of its containing block.*/
+        left: 50%;
+        /*Transform percentages are relative to the <h3> element height and width*/
+        -ms-transform: translateX(-50%)translateY(-50%);
+        -o-transform: translateX(-50%)translateY(-50%);
+        transform: translateX(-50%)translateY(-50%);
+}
+
+/*Responsive aspect ratio*/
+.stretchy-wrapper{
+    width:100%;
+    padding-bottom:100%; /*1:1 aspect ratio*/
+    position: relative;
+}
+
+.stretchy-wrapper>section{
+    position: absolute;
+    /*stretch section to take up all of .stretchy-wrapper div*/
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+/*End Responsive aspect ratio*/
+
+/*Background image styling for all projects*/
+.stretchy-wrapper>section{
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -moz-background-position: center center;
+    -o-background-position: center center;
+    background-position: center center;
+}
+
+/*Project 1*/
+.row div[class*="col"]:nth-child(2) section
 {
     background-color: #F5BB3D;
 }
 
-section[class="col-md-6"]:nth-child(3)
+.row div[class*="col"]:nth-child(2) section:hover,
+.row div[class*="col"]:nth-child(2) section:active{
+    background-image:url(../images/Audrey.png);
+}
+
+/*Project 2*/
+.row div[class*="col"]:nth-child(3) section
 {
     background-color: #74C346;
 }
 
-section[class="col-md-6"]:nth-child(4)
+.row div[class*="col"]:nth-child(3) section:hover,
+.row div[class*="col"]:nth-child(3) section:active{
+    background-image:url(../images/Comingsoon.png);
+}
+
+/*Project 3*/
+.row div[class*="col"]:nth-child(4) section
 {
     background-color: #DD005F;
 }
 
-section[class="col-md-6"]:nth-child(5)
+.row div[class*="col"]:nth-child(4) section:hover,
+.row div[class*="col"]:nth-child(4) section:active{
+    background-image:url(../images/Comingsoon.png);
+}
+
+/*Project 4*/
+.row div[class*="col"]:nth-child(5) section
 {
     background-color: #7D3493;
 }
 
-section[class="col-md-6"]:nth-child(6)
+.row div[class*="col"]:nth-child(5) section:hover,
+.row div[class*="col"]:nth-child(5) section:active{
+    background-image:url(../images/Comingsoon.png);
+}
+
+/*Project 5*/
+.row div[class*="col"]:nth-child(6) section
 {
     background-color: #3894D7;
 }
 
-section[class="col-md-6"]:nth-child(7)
+.row div[class*="col"]:nth-child(6) section:hover,
+.row div[class*="col"]:nth-child(6) section:active{
+    background-image:url(../images/Comingsoon.png);
+}
+
+/*Project 6*/
+.row div[class*="col"]:nth-child(7) section
 {
     background-color: #F5BB3D;
 }
+
+.row div[class*="col"]:nth-child(7) section:hover,
+.row div[class*="col"]:nth-child(7) section:active{
+    background-image:url(../images/Comingsoon.png);
+}
+
+.stretchy-wrapper>section a,
+.stretchy-wrapper>section p,
+.stretchy-wrapper>section span
+{
+    display:none;
+}
+
