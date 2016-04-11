@@ -37,6 +37,10 @@ h1, h3, header p{
     text-align: center;
 }
 
+hr{
+    border-top-color: #CCCAC8;
+}
+
 /*----------------------------------Navigation Bar--------------------------------------*/
 a.nav-toggle, a.nav-toggle.active, nav ul li a{
     color: #000;
@@ -56,12 +60,12 @@ a.nav-toggle, a.nav-toggle.active, nav ul li:last-of-type a{
 }
 
 a.nav-toggle{
-    border-bottom: #000 1px solid;
+    border-bottom: #CCCAC8 1px solid;
 }
 
 a.nav-toggle.active{
-    border-top: #000 1px solid;
-    border-bottom: #000 1px solid;
+    border-top: #CCCAC8 1px solid;
+    border-bottom: #CCCAC8 1px solid;
 }
 
 a.nav-toggle:focus,
@@ -108,8 +112,10 @@ h3{
 /*---Responsive aspect ratio---*/
 .stretchy-wrapper{
     width:100%;
-    padding-bottom:100%; /*1:1 aspect ratio*/
+/*    padding-bottom:100%; 1:1 aspect ratio*/
+    padding-bottom:56.25%; /*16:9 aspect ratio*/
     position: relative;
+    border: 3px double #000;
 }
 
 .stretchy-wrapper>section{
@@ -205,30 +211,19 @@ section:active .projectDetails p{
 /*-Project 1-*/
 
 /*Cover page*/
-.row div[class*="col"]:nth-child(2) section{
+.row div[class*="col"]:nth-child(3) section{
     background-color: #F5BB3D;
 }
 
 /*Project details background image*/
-.row div[class*="col"]:nth-child(2) section:hover,
-.row div[class*="col"]:nth-child(2) section:active{
+.row div[class*="col"]:nth-child(3) section:hover,
+.row div[class*="col"]:nth-child(3) section:active{
     background-image:url(../images/Audrey.png);
 }
 
 /*-Project 2-*/
-.row div[class*="col"]:nth-child(3) section{
-    background-color: #74C346;
-}
-
-.row div[class*="col"]:nth-child(3) section:hover,
-.row div[class*="col"]:nth-child(3) section:active{
-    background-image:url(../images/Comingsoon.png);
-}
-
-
-/*-Project 3-*/
 .row div[class*="col"]:nth-child(4) section{
-    background-color: #DD005F;
+    background-color: #74C346;
 }
 
 .row div[class*="col"]:nth-child(4) section:hover,
@@ -236,9 +231,10 @@ section:active .projectDetails p{
     background-image:url(../images/Comingsoon.png);
 }
 
-/*-Project 4-*/
+
+/*-Project 3-*/
 .row div[class*="col"]:nth-child(5) section{
-    background-color: #7D3493;
+    background-color: #DD005F;
 }
 
 .row div[class*="col"]:nth-child(5) section:hover,
@@ -246,9 +242,9 @@ section:active .projectDetails p{
     background-image:url(../images/Comingsoon.png);
 }
 
-/*-Project 5-*/
+/*-Project 4-*/
 .row div[class*="col"]:nth-child(6) section{
-    background-color: #3894D7;
+    background-color: #7D3493;
 }
 
 .row div[class*="col"]:nth-child(6) section:hover,
@@ -256,9 +252,9 @@ section:active .projectDetails p{
     background-image:url(../images/Comingsoon.png);
 }
 
-/*-Project 6-*/
+/*-Project 5-*/
 .row div[class*="col"]:nth-child(7) section{
-    background-color: #F5BB3D;
+    background-color: #3894D7;
 }
 
 .row div[class*="col"]:nth-child(7) section:hover,
@@ -266,4 +262,43 @@ section:active .projectDetails p{
     background-image:url(../images/Comingsoon.png);
 }
 
+/*-Project 6-*/
+.row div[class*="col"]:nth-child(8) section{
+    background-color: #F5BB3D;
+}
+
+.row div[class*="col"]:nth-child(8) section:hover,
+.row div[class*="col"]:nth-child(8) section:active{
+    background-image:url(../images/Comingsoon.png);
+}
+
 /*----------------------------------End Projects----------------------------------------*/
+/*----------------------------------About-----------------------------------------------*/
+article .row:nth-child(2) img{
+    max-width:75%;
+    margin-bottom: 15px;
+}
+
+@media only screen and (min-device-width : 767px) {
+    article .row:nth-child(2) img {
+    max-width:100%;    
+    }
+}
+
+/*----------------------------------End About-------------------------------------------*/
+/*----------------------------------Contact---------------------------------------------*/
+.contactOptions{
+    display: block;
+    width:50%;
+    margin: 0 auto;
+    text-align:center;
+    font-size: 1.75em;
+    word-spacing: 5px;
+}
+/*----------------------------------End Contact-----------------------------------------*/
+/*----------------------------------Footer----------------------------------------------*/
+footer{
+    text-align:center;
+    font-size: 0.75em;
+    margin-top:15px;
+}
