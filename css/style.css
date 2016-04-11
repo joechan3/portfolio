@@ -41,6 +41,19 @@ hr{
     border-top-color: #CCCAC8;
 }
 
+a{
+    color: #000;
+    font-weight: bold;
+}
+
+a:focus,
+a:hover,
+a:active{
+    color: #000;
+    text-decoration: underline;
+    outline: none;
+}
+
 /*----------------------------------Navigation Bar--------------------------------------*/
 a.nav-toggle, a.nav-toggle.active, nav ul li a{
     color: #000;
@@ -68,6 +81,7 @@ a.nav-toggle.active{
     border-bottom: #CCCAC8 1px solid;
 }
 
+
 a.nav-toggle:focus,
 a.nav-toggle:hover,
 a.nav-toggle:active,
@@ -83,6 +97,8 @@ nav ul li a:active{
 }
 
 /*----------------------------------End Navigation Bar----------------------------------*/
+
+
 
 /*----------------------------------Projects--------------------------------------------*/
 
@@ -301,4 +317,6 @@ footer{
     text-align:center;
     font-size: 0.75em;
     margin-top:15px;
+    margin-bottom:30px;
 }
+/*----------------------------------End Footer------------------------------------------*/
