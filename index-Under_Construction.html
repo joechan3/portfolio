@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Raleway:900|Arimo|Bitter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/devicon.css">
+    <link rel="stylesheet" href="css/imagehover.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Optional IE8 Support -->
@@ -21,16 +23,21 @@
 
 <body class="container">
     <header role="banner">
-        <div class="nav">
-            <p><a href="#Projects">Projects</a></p>
-            <p><a href="#AboutMe">About</a></p>
-            <p><a href="#ContactMe">Contact</a></p>
-            <p><a href="#">Menu</a></p>
+        <div class="nav row">
+            <div class="col-sm-4">
+                <p><a href="#Projects">Projects</a></p>
+            </div>
+            <div class="col-sm-4">
+                <p><a href="#AboutMe">About</a></p>
+            </div>
+            <div class="col-sm-4">
+                <p><a href="#ContactMe">Contact</a></p>
+            </div>
         </div>
-        
+
         <h1>Joseph Chan</h1>
         <p>Front End Web Developer</p>
-        <p>Robust solutions for your web projects</p>
+        <p>Web solutions for your web projects</p>
 
     </header>
     <main role="main">
@@ -40,22 +47,51 @@
                 <h2 id="Projects" class="sr-only">Projects</h2>
                 <!--Hide heading-->
 
+                <!--Bonn Steel-->
+                <div class="col-sm-6">
+                    <!--Maintain aspect ratio-->
+                    <div class="stretchy-wrapper">
+                        <section>
+                            <h3>Bonn Steel Detailers Ltd.<br>Website</h3>
+                            <div class="projectDetails">
+                                <!--Project link-->
+                                <a href="http://bonn-steel.co.nf" target="_blank" title="Check out Bonn Steel Detailers Ltd.">Bonn Steel Detailers Ltd.</a>
+                                <!--Project repo-->
+<!--                                <a href="#" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>-->
+                                <!--Project short description-->
+                                <p class="clear">Responsive, conversion-centric company website for Bonn Steel.</p>
+                                <!--Project technologies used-->
+                                <span class="devicon-jquery-plain" title="Built using jQuery"></span>
+                                <span class="devicon-javascript-plain" title="Built using JavaScript"></span>
+                                <span class="devicon-bootstrap-plain colored" title="Built using Bootstrap"></span>
+                                <span class="fa fa-css3" title="Built using CSS3"></span>
+                                <span class="fa fa-html5" title="Built using HTML5"></span>
+                                
+                            </div>
+                            <!--projectDetails-->
+                        </section>
+                    </div>
+                    <!--stretchy-wrapper-->
+                </div>
+                <!--col-sm-6"-->
+                
                 <!--Audrey Hepburn Project-->
                 <div class="col-sm-6">
                     <!--Maintain aspect ratio-->
                     <div class="stretchy-wrapper">
                         <section>
-                            <h3>Audrey Hepburn</h3>
+                            <h3>Audrey Hepburn<br>Web Page</h3>
                             <div class="projectDetails">
                                 <!--Project link-->
                                 <a href="https://joechan3.github.io/TributePage_AudreyHepburn/" target="_blank" title="Check out my Audrey Hepburn Tribute page.">Audrey Hepburn Tribute</a>
                                 <!--Project repo-->
                                 <a href="https://github.com/joechan3/TributePage_AudreyHepburn" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
                                 <!--Project short description-->
-                                <p class="clear">The most beautiful woman of all time.</p>
+                                <p class="clear">Responsive tribute page for the most beautiful woman of all time.</p>
                                 <!--Project technologies used-->
-                                <span class="fa fa-html5" title="Built using HTML5"></span>
+                                <span class="devicon-bootstrap-plain colored" title="Built using Bootstrap"></span>
                                 <span class="fa fa-css3" title="Built using CSS3"></span>
+                                <span class="fa fa-html5" title="Built using HTML5"></span>
                             </div>
                             <!--projectDetails-->
                         </section>
@@ -64,22 +100,26 @@
                 </div>
                 <!--col-sm-6"-->
 
-                <!--Future Project 1-->
+                
+
+                <!--Calculator-->
                 <div class="col-sm-6">
                     <!--Maintain aspect ratio-->
                     <div class="stretchy-wrapper">
                         <section>
-                            <h3>Future Project 1</h3>
+                            <h3>JavaScript Calculator<br>Web App</h3>
                             <div class="projectDetails">
                                 <!--Project link-->
-                                <a href="#" target="_blank" title="Check out my Future Project 1 page.">Future Project 1</a>
+                                <a href="https://joechan3.github.io/JSCalculator" target="_blank" title="Check out my JavaScript Calculator web app.">Calculator</a>
                                 <!--Project repo-->
-                                <a href="#" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
+                                <a href="https://github.com/joechan3/JSCalculator" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
                                 <!--Project short description-->
-                                <p class="clear">Future project 1 description.</p>
+                                <p class="clear">Calculator web app coded in JavaScript.</p>
                                 <!--Project technologies used-->
-                                <span class="fa fa-html5" title="Built using HTML5"></span>
+                                <span class="devicon-jquery-plain" title="Built using jQuery"></span>
+                                <span class="devicon-javascript-plain" title="Built using JavaScript"></span>
                                 <span class="fa fa-css3" title="Built using CSS3"></span>
+                                <span class="fa fa-html5" title="Built using HTML5"></span>
                             </div>
                             <!--projectDetails-->
                         </section>
@@ -88,22 +128,25 @@
                 </div>
                 <!--col-sm-6"-->
 
-                <!--Future Project 2-->
+                <!--Wikipedia Viewer-->
                 <div class="col-sm-6">
                     <!--Maintain aspect ratio-->
                     <div class="stretchy-wrapper">
                         <section>
-                            <h3>Future Project 2</h3>
+                            <h3>Wikipedia Viewer<br>Web App</h3>
                             <div class="projectDetails">
                                 <!--Project link-->
-                                <a href="#" target="_blank" title="Check out my Future Project 2 page.">Future Project 2</a>
+                                <a href="https://joechan3.github.io/WikipediaViewer/" target="_blank" title="Check out my Wikipedia Viewer.">Wikipedia Viewer</a>
                                 <!--Project repo-->
-                                <a href="#" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
+                                <a href="https://github.com/joechan3/WikipediaViewer" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
                                 <!--Project short description-->
-                                <p class="clear">Future project 2 description.</p>
+                                <p class="clear">Wikipedia Search Web App</p>
                                 <!--Project technologies used-->
-                                <span class="fa fa-html5" title="Built using HTML5"></span>
+                                <span class="devicon-jquery-plain" title="Built using jQuery"></span>
+                                <span class="devicon-javascript-plain" title="Built using JavaScript"></span>
+                                <span class="devicon-bootstrap-plain colored" title="Built using Bootstrap"></span>
                                 <span class="fa fa-css3" title="Built using CSS3"></span>
+                                <span class="fa fa-html5" title="Built using HTML5"></span>
                             </div>
                             <!--projectDetails-->
                         </section>
@@ -112,22 +155,25 @@
                 </div>
                 <!--col-sm-6"-->
 
-                <!--Future Project 3-->
+                <!--Random Joseph Quote Machine-->
                 <div class="col-sm-6">
                     <!--Maintain aspect ratio-->
                     <div class="stretchy-wrapper">
                         <section>
-                            <h3>Future Project 3</h3>
+                            <h3>Joseph Quote Machine<br>Web App</h3>
                             <div class="projectDetails">
                                 <!--Project link-->
-                                <a href="#" target="_blank" title="Check out my Future Project 3 page.">Future Project 3</a>
+                                <a href="https://joechan3.github.io/RandomJosephQuoteMachine/" target="_blank" title="Check out my Random Joseph Quote Machine.">Random Joseph Quote Machine</a>
                                 <!--Project repo-->
-                                <a href="#" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
+                                <a href="https://github.com/joechan3/RandomJosephQuoteMachine" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
                                 <!--Project short description-->
-                                <p class="clear">Future project 3 description.</p>
+                                <p class="clear">Web app delivering random quotes by authors named Joseph.</p>
                                 <!--Project technologies used-->
-                                <span class="fa fa-html5" title="Built using HTML5"></span>
+                                <span class="devicon-jquery-plain" title="Built using jQuery"></span>
+                                <span class="devicon-javascript-plain" title="Built using JavaScript"></span>
+                                <span class="devicon-bootstrap-plain colored" title="Built using Bootstrap"></span>
                                 <span class="fa fa-css3" title="Built using CSS3"></span>
+                                <span class="fa fa-html5" title="Built using HTML5"></span>
                             </div>
                             <!--projectDetails-->
                         </section>
@@ -136,46 +182,25 @@
                 </div>
                 <!--col-sm-6"-->
 
-                <!--Future Project 4-->
+                <!--Twitch Tv Listings-->
                 <div class="col-sm-6">
                     <!--Maintain aspect ratio-->
                     <div class="stretchy-wrapper">
                         <section>
-                            <h3>Future Project 4</h3>
+                            <h3>Twitch Tv Listings<br>Web App</h3>
                             <div class="projectDetails">
                                 <!--Project link-->
-                                <a href="#" target="_blank" title="Check out my Future Project 4 page.">Future Project 4</a>
+                                <a href="https://joechan3.github.io/TwitchTVListing/" target="_blank" title="Check out my Twitch Tv Listings.">Twitch Tv Listings</a>
                                 <!--Project repo-->
-                                <a href="#" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
+                                <a href="https://github.com/joechan3/TwitchTVListing" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
                                 <!--Project short description-->
-                                <p class="clear">Future project 4 description.</p>
+                                <p class="clear">View a curated list of Twitch.tv channels.</p>
                                 <!--Project technologies used-->
-                                <span class="fa fa-html5" title="Built using HTML5"></span>
+                                <span class="devicon-jquery-plain" title="Built using jQuery"></span>
+                                <span class="devicon-javascript-plain" title="Built using JavaScript"></span>
+                                <span class="devicon-bootstrap-plain colored" title="Built using Bootstrap"></span>
                                 <span class="fa fa-css3" title="Built using CSS3"></span>
-                            </div>
-                            <!--projectDetails-->
-                        </section>
-                    </div>
-                    <!--stretchy-wrapper-->
-                </div>
-                <!--col-sm-6"-->
-
-                <!--Future Project 5-->
-                <div class="col-sm-6">
-                    <!--Maintain aspect ratio-->
-                    <div class="stretchy-wrapper">
-                        <section>
-                            <h3>Future Project 5</h3>
-                            <div class="projectDetails">
-                                <!--Project link-->
-                                <a href="#" target="_blank" title="Check out my Future Project 5 page.">Future Project 5</a>
-                                <!--Project repo-->
-                                <a href="#" title="See project GitHub repository." target="_blank"><span class="fa fa-code"></span></a>
-                                <!--Project short description-->
-                                <p class="clear">Future project 5 description.</p>
-                                <!--Project technologies used-->
                                 <span class="fa fa-html5" title="Built using HTML5"></span>
-                                <span class="fa fa-css3" title="Built using CSS3"></span>
                             </div>
                             <!--projectDetails-->
                         </section>
@@ -188,23 +213,27 @@
             <!--.row Projects-->
             <section class="row">
                 <hr>
-                <h2 id="AboutMe" class="sr-only">About Me</h2>
+                <h2  class="sr-only">About Me</h2>
                 <!--Hide heading-->
-                <div class="col-sm-3 col-sm-push-9">
-                    <img src="images/Placeholder-Person.jpg" class="center-block img-responsive" alt="My Portrait">
+                <div class="col-sm-3 col-sm-push-9" id="AboutMe">
+                    <img src="images/Me.jpg" class="center-block img-responsive img-circle" alt="My Portrait">
                 </div>
                 <div class="col-sm-9 col-sm-pull-3">
-                    <p>Hi, my name is Joseph Chan and I'm a freelance front end developer based in Edmonton.</p>
+                    <p>Hi, my name is Joseph Chan and I'm a front end web developer based in Edmonton, Alberta.</p>
 
-                    <p>I build websites and web applications to turn your ideas to life on the browser. My skills include HTML5, CSS3, and Bootstrap&nbsp;3. Continuous improvement is my motto, so I'm currently adding JavaScript and jQuery to my skillset.</p>
+                    <p>I build websites and web applications to turn your ideas to life on the browser. Besides my collaborative attitude and enthusiasm for the web development industry, the toolset that allows me to solve your web problems includes:</p>
+                    
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                    </ul>
 
-                    <p>My interests include responsive web design, web design systems (specifically Atomic Design), and user experience.</p>
+                    <p>I am available for freelance projects now for small businesses and individuals in Edmonton and internationally.</p>
 
-                    <p>I'm fascinated by how web design is adapting to growing device diversity, i.e. mobile devices, and how web technologies like CSS3 and Bootstrap are responding to this change.</p>
-
-                    <p>I'm currently offering pro bono work to grow my portfolio.</p>
-
-                    <p><a href="mailto:joechan3@gmail.com?Subject=Let's%20talk" title="Send me an email.">Contact me</a> today and let's start a conversation on how we can build your web ideas.</p>
+                    <p>Contact me today at <a href="mailto:Joseph.Chan.Dev@gmail.com?Subject=Let's%20talk" title="Send me an email.">Joseph.Chan.Dev@gmail.com</a> and let's start a conversation on how we can solve your web problems together.</p>
                 </div>
 
 
@@ -218,7 +247,7 @@
                     <!--Link to GitHub profile-->
                     <a href="https://github.com/joechan3/" title="Check out my GitHub profile." target="_blank"><span class="fa fa-github"></span></a>
                     <!--Email link-->
-                    <a href="mailto:joechan3@gmail.com?Subject=Let's%20talk" title="Send me an email."><span class="fa fa-envelope"></span></a>
+                    <a href="mailto:Joseph.Chan.Dev@gmail.com?Subject=Let's%20talk" title="Send me an email."><span class="fa fa-envelope"></span></a>
                 </div>
             </section>
             <!--Contact-->
