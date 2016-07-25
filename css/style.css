@@ -140,6 +140,7 @@ h3{
 }
 
 /*All project details appear when hovering or active over project*/
+.row div[class*="col"] section:focus .projectDetails,
 .row div[class*="col"] section:hover .projectDetails,
 .row div[class*="col"] section:active .projectDetails{
     display:block;
@@ -154,26 +155,31 @@ h3{
 }
 
 /*Project link, project repo link*/
+.stretchy-wrapper>section a:focus,
 .stretchy-wrapper>section a:hover,
 .stretchy-wrapper>section a:active,
+.stretchy-wrapper>section a span:focus,
 .stretchy-wrapper>section a span:hover,
 .stretchy-wrapper>section a span:active{
     text-decoration: underline;
 }
 
 /*Project link*/
+section:focus .projectDetails a:nth-child(1),
 section:hover .projectDetails a:nth-child(1),
 section:active .projectDetails a:nth-child(1){
     float:left;
 }
 
 /*Project repo link*/
+section:focus .projectDetails a:nth-child(2),
 section:hover .projectDetails a:nth-child(2),
 section:active .projectDetails a:nth-child(2){
     float:right;
 }
 
 /*Short description*/
+section:focus .projectDetails p,
 section:hover .projectDetails p,
 section:active .projectDetails p{
     clear:both;
@@ -204,6 +210,7 @@ section:active .projectDetails p{
 }
 
 /*Hide cover page when hover/active */
+.row div[class*="col"] section:focus h3,
 .row div[class*="col"] section:hover h3,
 .row div[class*="col"] section:active h3{
     display:none;
@@ -217,6 +224,7 @@ section:active .projectDetails p{
 }
 
 /*Project details background image*/
+.row div[class*="col"]:nth-child(3) section:focus,
 .row div[class*="col"]:nth-child(3) section:hover,
 .row div[class*="col"]:nth-child(3) section:active{
     background-image:url(../images/Bonn.png);
@@ -227,6 +235,7 @@ section:active .projectDetails p{
     background-color: #74C346;
 }
 
+.row div[class*="col"]:nth-child(4) section:focus,
 .row div[class*="col"]:nth-child(4) section:hover,
 .row div[class*="col"]:nth-child(4) section:active{
     background-image:url(../images/Audrey.png);
@@ -238,6 +247,7 @@ section:active .projectDetails p{
     background-color: #DD005F;
 }
 
+.row div[class*="col"]:nth-child(5) section:focus,
 .row div[class*="col"]:nth-child(5) section:hover,
 .row div[class*="col"]:nth-child(5) section:active{
     background-image:url(../images/Calc.png);
@@ -248,6 +258,7 @@ section:active .projectDetails p{
     background-color: #7D3493;
 }
 
+.row div[class*="col"]:nth-child(6) section:focus,
 .row div[class*="col"]:nth-child(6) section:hover,
 .row div[class*="col"]:nth-child(6) section:active{
     background-image:url(../images/Wik.png);
@@ -258,6 +269,7 @@ section:active .projectDetails p{
     background-color: #3894D7;
 }
 
+.row div[class*="col"]:nth-child(7) section:focus,
 .row div[class*="col"]:nth-child(7) section:hover,
 .row div[class*="col"]:nth-child(7) section:active{
     background-image:url(../images/Quote.png);
@@ -268,6 +280,7 @@ section:active .projectDetails p{
     background-color: #F5BB3D;
 }
 
+.row div[class*="col"]:nth-child(8) section:focus,
 .row div[class*="col"]:nth-child(8) section:hover,
 .row div[class*="col"]:nth-child(8) section:active{
     background-image:url(../images/Twitch.png);
