@@ -194,6 +194,13 @@ section:active .projectDetails p{
     padding: 0px 5px;
 }
 
+.detail_title {
+    font-weight:bold;
+    display: inline;
+    margin: 0;
+    line-height: 2.25;
+}
+
 /*Hide cover page when hover/active */
 .row div[class*="col"] section:hover h3,
 .row div[class*="col"] section:active h3{
