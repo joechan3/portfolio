@@ -95,6 +95,8 @@ h3{
     /*For absolutely positioned elements, "left" specifies the distance between the left margin edge of the element and the left edge of its containing block.*/
     left: 50%;
     /*Transform percentages are relative to the <h3> element's height and width*/
+    -webkit-transform: translateX(-50%)translateY(-50%);
+    -moz-transform: translateX(-50%)translateY(-50%);
     -ms-transform: translateX(-50%)translateY(-50%);
     -o-transform: translateX(-50%)translateY(-50%);
     transform: translateX(-50%)translateY(-50%);
