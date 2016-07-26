@@ -140,9 +140,11 @@ h3{
 }
 
 /*All project details appear when hovering or active over project*/
+/*
 .project:focus .projectDetails,
 .project:hover .projectDetails,
 .project:active .projectDetails,
+*/
 .details-visible .projectDetails{
     display:block;
 }
@@ -205,9 +207,11 @@ section:active .projectDetails p{
 }
 
 /*Hide cover page when hover/active */
+/*
 .project:focus h3,
 .project:hover h3,
 .project:active h3,
+*/
 .details-visible h3{
     display:none;
 }
@@ -220,9 +224,11 @@ section:active .projectDetails p{
 }
 
 /*Project details background image*/
+/*
 .project1:focus,
 .project1:hover,
 .project1:active,
+*/
 .project1.details-visible{
     background-image:url(../images/Bonn.png);
 }
@@ -232,9 +238,11 @@ section:active .projectDetails p{
     background-color: #74C346;
 }
 
+/*
 .project2:focus,
 .project2:hover,
 .project2:active,
+*/
 .project2.details-visible{
     background-image:url(../images/Audrey.png);
 }
@@ -245,9 +253,11 @@ section:active .projectDetails p{
     background-color: #DD005F;
 }
 
+/*
 .project3:focus,
 .project3:hover,
 .project3:active,
+*/
 .project3.details-visible{
     background-image:url(../images/Calc.png);
 }
@@ -257,9 +267,11 @@ section:active .projectDetails p{
     background-color: #7D3493;
 }
 
+/*
 .project4:focus,
 .project4:hover,
 .project4:active,
+*/
 .project4.details-visible{
     background-image:url(../images/Wik.png);
 }
@@ -269,9 +281,11 @@ section:active .projectDetails p{
     background-color: #3894D7;
 }
 
+/*
 .project5:focus,
 .project5:hover,
 .project5:active,
+*/
 .project5.details-visible{
     background-image:url(../images/Quote.png);
 }
@@ -281,9 +295,11 @@ section:active .projectDetails p{
     background-color: #F5BB3D;
 }
 
+/*
 .project6:focus,
 .project6:hover,
 .project6:active,
+*/
 .project6.details-visible{
     background-image:url(../images/Twitch.png);
 }
