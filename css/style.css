@@ -140,9 +140,10 @@ h3{
 }
 
 /*All project details appear when hovering or active over project*/
-.row div[class*="col"] section:focus .projectDetails,
-.row div[class*="col"] section:hover .projectDetails,
-.row div[class*="col"] section:active .projectDetails{
+.project:focus .projectDetails,
+.project:hover .projectDetails,
+.project:active .projectDetails,
+.details-visible .projectDetails{
     display:block;
 }
 
@@ -165,16 +166,10 @@ h3{
 }
 
 /*Project link*/
-section:focus .projectDetails a:nth-child(1),
-section:hover .projectDetails a:nth-child(1),
-section:active .projectDetails a:nth-child(1){
-    float:left;
-}
-
-/*Project repo link*/
 section:focus .projectDetails a:nth-child(2),
 section:hover .projectDetails a:nth-child(2),
-section:active .projectDetails a:nth-child(2){
+section:active .projectDetails a:nth-child(2),
+section .projectDetails a:nth-child(2){
     float:right;
 }
 
@@ -210,79 +205,86 @@ section:active .projectDetails p{
 }
 
 /*Hide cover page when hover/active */
-.row div[class*="col"] section:focus h3,
-.row div[class*="col"] section:hover h3,
-.row div[class*="col"] section:active h3{
+.project:focus h3,
+.project:hover h3,
+.project:active h3,
+.details-visible h3{
     display:none;
 }
 
 /*-Project 1-*/
 
 /*Cover page*/
-.row div[class*="col"]:nth-child(3) section{
+.project1{
     background-color: #F5BB3D;
 }
 
 /*Project details background image*/
-.row div[class*="col"]:nth-child(3) section:focus,
-.row div[class*="col"]:nth-child(3) section:hover,
-.row div[class*="col"]:nth-child(3) section:active{
+.project1:focus,
+.project1:hover,
+.project1:active,
+.project1.details-visible{
     background-image:url(../images/Bonn.png);
 }
 
 /*-Project 2-*/
-.row div[class*="col"]:nth-child(4) section{
+.project2{
     background-color: #74C346;
 }
 
-.row div[class*="col"]:nth-child(4) section:focus,
-.row div[class*="col"]:nth-child(4) section:hover,
-.row div[class*="col"]:nth-child(4) section:active{
+.project2:focus,
+.project2:hover,
+.project2:active,
+.project2.details-visible{
     background-image:url(../images/Audrey.png);
 }
 
 
 /*-Project 3-*/
-.row div[class*="col"]:nth-child(5) section{
+.project3{
     background-color: #DD005F;
 }
 
-.row div[class*="col"]:nth-child(5) section:focus,
-.row div[class*="col"]:nth-child(5) section:hover,
-.row div[class*="col"]:nth-child(5) section:active{
+.project3:focus,
+.project3:hover,
+.project3:active,
+.project3.details-visible{
     background-image:url(../images/Calc.png);
 }
 
 /*-Project 4-*/
-.row div[class*="col"]:nth-child(6) section{
+.project4{
     background-color: #7D3493;
 }
 
-.row div[class*="col"]:nth-child(6) section:focus,
-.row div[class*="col"]:nth-child(6) section:hover,
-.row div[class*="col"]:nth-child(6) section:active{
+.project4:focus,
+.project4:hover,
+.project4:active,
+.project4.details-visible{
     background-image:url(../images/Wik.png);
 }
 
 /*-Project 5-*/
-.row div[class*="col"]:nth-child(7) section{
+.project5{
     background-color: #3894D7;
 }
 
-.row div[class*="col"]:nth-child(7) section:focus,
-.row div[class*="col"]:nth-child(7) section:hover,
-.row div[class*="col"]:nth-child(7) section:active{
+.project5:focus,
+.project5:hover,
+.project5:active,
+.project5.details-visible{
     background-image:url(../images/Quote.png);
 }
 
 /*-Project 6-*/
-.row div[class*="col"]:nth-child(8) section{
+.project6{
     background-color: #F5BB3D;
 }
 
-.row div[class*="col"]:nth-child(8) section:focus,
-.row div[class*="col"]:nth-child(8) section:hover,
-.row div[class*="col"]:nth-child(8) section:active{
+.project6:focus,
+.project6:hover,
+.project6:active,
+.project6.details-visible{
     background-image:url(../images/Twitch.png);
 }
 
